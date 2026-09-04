@@ -5,7 +5,7 @@ const Hero = () => {
     return (
         <div className ='text-white'>
         
-            <div className='max-w-[800px] mt-[-96px] w-full h-screen mx-auto text-center flex flex-col justify-center'> 
+            <div className='max-w-[800px] mt-[-96px] w-full h-screen mx-auto text-center flex flex-col justify-center '> 
                 <p className='text-green-400 font-bold p-2 md:text-3xl sm:text-xl text-l'>Jum Flark</p>
                 <h1 className='md:text-4xl sm:2xl text:1xl font-bold md:py-4'>Explore the fascinating life of the pig icon Jum Flark</h1>
                 

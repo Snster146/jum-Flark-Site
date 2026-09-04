@@ -11,7 +11,7 @@ const NewsLetter =()=>{
                 <div className='my-4'>
                     <div >
                         <input className="p-3 flex rounded-md text-black mx-4 mr-4 md:w-[60%] w-[80%]" type="email" placeholder="Enter Email" />
-                        <button className className='mt-5 bg-transparent hover:bg-green-600 text-green-400 font-semibold hover:text-white py-2 px-4 border border-green-600 hover:border-transparent rounded-md md:text-xl sm:text-m  text-s ml-4 '>
+                        <button  className='mt-5 bg-transparent hover:bg-green-600 text-green-400 font-semibold hover:text-white py-2 px-4 border border-green-600 hover:border-transparent rounded-md md:text-xl sm:text-m  text-s ml-4 '>
                         Notify me
                         </button>
                     </div>
