@@ -2,6 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family:Wordle;
+  src: url('./assets/Wordle-Font.ttf');
+}
+.Wordle{
+  font-family: Wordle;
+}
+@font-face {
+  font-family: ClearSans;
+  src: url('./assets/clear-sans.bold.ttf');
+}
+.ClearSans{
+  font-family: ClearSans;
+}
+
 body{
   background-color: #000300;
 }
