@@ -9,7 +9,7 @@ const Navbar = () => {
 
     return (
         <div className='flex justify-between  items-center h-24 max-width-{1240px} mx-auto px-4 font-bold bg-[#fff8f7] rounded-lg'>
-            <h1 className='w-full text-3xl font-bold text-[#FF8AB9] m-4  ease-in-out duration-700' >LOGO COMING...</h1>
+            <a href="/"> <h1 className='w-full text-3xl font-bold text-[#FF8AB9] m-4  ease-in-out duration-700' >LOGO COMING...</h1> </a>
     
             
 <ul className='hidden md:flex [&>li>a]:block [&>li>a]:whitespace-nowrap [&>li>a:hover]:text-[#AD7952]'>
@@ -19,7 +19,7 @@ const Navbar = () => {
     </a>
   </li>
   <li className='p-4'>
-    <a href='https://www.youtube.com/watch?v=zYdkWdYiU4w'>
+    <a href='/wordle'>
       Flark Dupes
     </a>
   </li>
