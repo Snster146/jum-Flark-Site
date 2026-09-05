@@ -18,5 +18,22 @@
 }
 
 body{
-  background-color: #000300;
+  background-color: #FFE6F0;
+}
+
+::selection {
+  color: #FF2E82;
+  background: #ff9ac3;
+}
+
+body {
+  color: #ff9dc2;
+}
+
+h1 {
+  color: #fd8cb8;
+}
+
+h2 {
+  color: #ff78ac;
 }
