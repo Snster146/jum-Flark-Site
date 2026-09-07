@@ -4,8 +4,10 @@ import {
     FaFacebookSquare,
     FaGithubSquare,
     FaInstagram,
-    FaTwitterSquare
-}from 'react-icons/fa'
+    FaTwitterSquare,
+    FaLinkedin
+}from 
+'react-icons/fa'
 
 const Footer =()=>{
     return(
@@ -19,6 +21,11 @@ const Footer =()=>{
                     <FaFacebookSquare size={30}/>
                     <FaInstagram size={30}/>
                     <FaTwitterSquare size={30}/>
+                    <a href ="https://www.linkedin.com/feed/">
+                    
+                    <FaLinkedin size={30}/>
+                    
+                    </a>                    
                 </div>
                 <div className=" lg:col-span-2 flex justify-between ">
                     <ul>
