@@ -39,10 +39,12 @@ const Youtube =()=>{
                         <GoPlus className="text-black" size={20}/>
                         <p >Create</p>
                     </div>
+                    
+                    <div className=" ml-5 w-12 h-12 bg-blue-400 rounded-full flex items-center justify-center flex-shrink-0">
+                            <p className="text-white font-bold text-sm">JF</p>
+                        </div>
 
-                    <div className=" flex items-center ml-5 border-2 p-3 bg-blue-400 rounded-3xl">
-                        <h1 className="text-white">JF</h1>
-                    </div>
+
                 </div>
                 
 
@@ -65,14 +67,57 @@ const Youtube =()=>{
 
                 </ul>
             </div>
+            <div className=" sm:grid grid-cols-3 gap-4 ml-3 mr-5 ">
+                    
+                <div className="">
 
-            <div className="sm:grid grid-cols-3 gap-4 ml-3 mr-5 ">
-                    <div className=""> <img src={thumbnail1} alt="thumbnail"></img></div>
+                    <img src={thumbnail1} alt="thumbnail" className=" md:h-64 w-full  rounded-3xl "></img>
+                    
+                    <div className=" mt-5 flex items-center gap-3">
+                        <div className="w-12 h-12 bg-blue-400 rounded-full flex items-center justify-center flex-shrink-0">
+                            <p className="text-white font-bold text-sm">JF</p>
+                        </div>
+                        <div className="flex flex-col">
+                            <p className="font-bold">Jum Flark Arduino Tutorial</p>
+                            <p className="text-gray-500 text-sm">JumTeaches 10m 9 yr ago</p>
+                        </div>
+                    </div>
+                </div>
                    
-                   
-                   {/* others */}
-                    <div> <h1 className="border border-black">div1</h1></div>
-                    <div> <h1 className="border border-black">div1</h1></div>
+                    <div className="">
+
+                    <img src={thumbnail1} alt="thumbnail" className=" md:h-64 w-full  rounded-3xl "></img>
+                    
+                    <div className=" mt-5 flex items-center gap-3">
+                        <div className="w-12 h-12 bg-blue-400 rounded-full flex items-center justify-center flex-shrink-0">
+                            <p className="text-white font-bold text-sm">JF</p>
+                        </div>
+                        <div className="flex flex-col">
+                            <p className="font-bold">Jum Flark Arduino Tutorial</p>
+                            <p className="text-gray-500 text-sm">JumTeaches 10m 9 yr ago</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div className="">
+
+                    <img src={thumbnail1} alt="thumbnail" className=" md:h-64 w-full  rounded-3xl "></img>
+                    
+                    <div className=" mt-5 flex items-center gap-3">
+                        <div className="w-12 h-12 bg-blue-400 rounded-full flex items-center justify-center flex-shrink-0">
+                            <p className="text-white font-bold text-sm">JF</p>
+                        </div>
+                        <div className="flex flex-col">
+                            <p className="font-bold">Jum Flark Arduino Tutorial</p>
+                            <p className="text-gray-500 text-sm">JumTeaches 10m 9 yr ago</p>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
             </div>
            
 
