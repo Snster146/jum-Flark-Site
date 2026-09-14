@@ -7,6 +7,7 @@ import NewsLetter from './components/NewsLetter';
 import Cards from './components/Cards';
 import Footer from './components/Footer';
 import Wordle from './components/Wordle';
+import Youtube from './components/Youtube';
 
 function App() {
   return (
@@ -20,7 +21,7 @@ function App() {
           <Route path="/family" element={<div><FamilyTree /> </div>} />
           <Route path="/wordle" element={<Wordle />}/>
           <Route path="/subscribe" element={<div><Cards /> </div> }/>
-          
+          <Route path="/Youtube"  element={<div> <Youtube  />   </div>} />
         </Routes>
         <NewsLetter /> 
         <Footer />
