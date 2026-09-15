@@ -12,7 +12,7 @@ const Instagram = () => {
   ];
 
   return (
-    <div className="h-screen mt-5 text-black"  >
+    <div className="min-h-screen mt-5 mb-8 text-black">
 
       <div className="w-[80%] mx-auto bg-gray-100 ">
 
