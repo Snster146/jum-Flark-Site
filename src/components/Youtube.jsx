@@ -24,17 +24,17 @@ const Youtube =()=>{
 
                 </div>
 
-                <div id="search-icon" className="flex md:hidden items-center gap-2 mx-auto">
+                <div id="search-icon" className="flex md:hidden items-center gap-2 mx-auto hover:border-3   hover:bg-gray-200 hover:rounded-full">
                     <MdSearch className="text-black" size={35}/>
                 
                 </div>
 
                 <div className="flex items-center mr-10 ">
-                    <div className="flex items-center ml-5 border-2 p-3 rounded-full bg-gray-200">
+                    <div className="flex items-center ml-5 border-2 p-3 rounded-full bg-gray-200 hover:bg-gray-300">
                         <HiOutlineMicrophone className="text-black" size={20} />
                     </div>
 
-                    <div className=" flex items-center ml-5 border-2 p-3 rounded-full bg-gray-200">
+                    <div className=" flex items-center ml-5 border-2 p-3 rounded-full bg-gray-200 hover:bg-gray-300">
                         <GoPlus className="text-black" size={20}/>
                         <p >Create</p>
                     </div>
@@ -53,18 +53,15 @@ const Youtube =()=>{
             </div>
 
 
-
-
-
             <div className="w-screen h-[5%] flex items-center">
 
                 <ul className="flex justify-center gap-4 mx-auto items-center">
-                    <li className="px-4 py-2 border border-black rounded bg-black rounded-2xl"><p className="text-white">All</p></li>
-                    <li className="px-4 py-2 border rounded bg-gray-100 rounded-2xl" ><p>Music</p></li>
-                    <li className="px-4 py-2 border rounded bg-gray-100 rounded-2xl"><p>Gaming</p></li>
-                    <li className="px-4 py-2 border rounded bg-gray-100 rounded-2xl" ><p>Pigs</p></li>
-                    <li className="px-4 py-2 border rounded bg-gray-100 rounded-2xl"><p>Animals</p></li>
-                    <li className="px-4 py-2 border rounded bg-gray-100 rounded-2xl"><p>Fish</p></li>
+                    <li className="px-4 py-2 border border-black rounded bg-black rounded-2xl "><p className="text-white">All</p></li>
+                    <li className="px-4 py-2 border rounded bg-gray-100 rounded-2xl hover:bg-gray-200" ><p>Music</p></li>
+                    <li className="px-4 py-2 border rounded bg-gray-100 rounded-2xl hover:bg-gray-200"><p>Gaming</p></li>
+                    <li className="px-4 py-2 border rounded bg-gray-100 rounded-2xl hover:bg-gray-200" ><p>Pigs</p></li>
+                    <li className="px-4 py-2 border rounded bg-gray-100 rounded-2xl hover:bg-gray-200"><p>Animals</p></li>
+                    <li className="px-4 py-2 border rounded bg-gray-100 rounded-2xl hover:bg-gray-200"><p>Fish</p></li>
 
                 </ul>
             </div>

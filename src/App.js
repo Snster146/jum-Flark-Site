@@ -8,6 +8,7 @@ import Cards from './components/Cards';
 import Footer from './components/Footer';
 import Wordle from './components/Wordle';
 import Youtube from './components/Youtube';
+import Instagram from './components/instagram'
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           <Route path="/wordle" element={<Wordle />}/>
           <Route path="/subscribe" element={<div><Cards /> </div> }/>
           <Route path="/Youtube"  element={<div> <Youtube  />   </div>} />
+          <Route path="/instagram" element={<div><Instagram /></div>}   />
         </Routes>
         <NewsLetter /> 
         <Footer />
