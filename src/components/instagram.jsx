@@ -1,5 +1,10 @@
 import React from "react";
 import FlarkPfp from "../assets/thumbnail-1.jpeg";
+import { ImInstagram } from "react-icons/im";
+import { LuMessageCircleHeart } from "react-icons/lu";
+import { FaRegNewspaper } from "react-icons/fa";
+import { TbPig } from "react-icons/tb";
+import { TiHome } from "react-icons/ti";
 
 const Instagram = () => {
   const posts = [
@@ -78,8 +83,17 @@ const Instagram = () => {
                 </div>
               ))}
             </div>
+
+
           </div>
         </main>
+          <div className="grid grid-cols-5 place-items-center w-full py-2">
+            <div><TiHome className="h-24 w-24" /></div>
+            <div><TbPig className="h-24 w-24" /></div>
+            <div><ImInstagram className="h-24 w-24" /></div>
+            <div><LuMessageCircleHeart className="h-24 w-24" /></div>
+            <div><FaRegNewspaper className="h-24 w-24" /></div>
+        </div>
       </div>
     </div>
   );
