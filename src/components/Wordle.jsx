@@ -49,7 +49,9 @@ const Wordle = () => {
                 const checkedWord = checkWord(currWord, rowCell);
                 isjum = checkedWord === 3;
                 isjum_real=checkedWord === 4;
-                if (isjum_real){alert ("well done")}
+                // if (isjum_real){
+                //     document.
+                // }
                 if (!isjum){
                 setRowCell(rowCell + 1);
                 setCollCell(0);
