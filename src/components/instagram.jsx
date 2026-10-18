@@ -47,17 +47,17 @@ const Instagram = () => {
               <div className="grid grid-cols-3 text-xs  mb-3 w-full text-center">
              
                 <div className="border border-black  bg-gray-200 py-2 ">
-                  <span className="font-bold block">128</span>
+                  <span className="font-bold block">19</span>
                   photos
                 </div>
 
 
                 <div className="border border-black  bg-gray-200 py-2">
-                  <span className="font-bold block">42.7k</span>
+                  <span className="font-bold block">2</span>
                   followers
                 </div>
                 <div className="border border-black  bg-gray-200 py-2">
-                  <span className="font-bold block">614</span>
+                  <span className="font-bold block">0</span>
                   following
                 </div>
               </div>

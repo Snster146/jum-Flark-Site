@@ -13,13 +13,12 @@ const Hero = () => {
                     {/* <p>It's not made yet, But I swear it'll be sick, So sick, Literally so sick, I swear... </p> */}
                     <ReactTyped  strings={['It\'s not made yet', 'But I swear it\'ll be sick', 'So sick, literally so sick, I swear...']} typeSpeed={60} backSpeed={30} loop/>
                 </div>
-    
-
-
             </div>
         </div>
+
     )
 
 }
 
 export default Hero
+

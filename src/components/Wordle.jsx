@@ -1,11 +1,18 @@
 import React from "react";
 import { useState } from "react";
 import { LuDelete } from "react-icons/lu";
-import checkWord from "../js/wordle.js"
+import checkWord from "../js/wordle.js";
+
 
 let isjum = false
 let isjum_real = false
 
+function MyPage() {
+  return (
+    <div className="Wordle">
+    </div>
+  );
+}
 function createCells(i) {
     return (
         <div className="">
@@ -17,6 +24,7 @@ function createCells(i) {
                 </div>
             ))}
         </div>
+        
     )
 }
 

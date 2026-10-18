@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -6,9 +7,13 @@
   font-family:Wordle;
   src: url('./assets/Wordle-Font.ttf');
 }
+
 .Wordle{
   font-family: Wordle;
+  src: url('./assets/Wordle-Font.ttf');
+
 }
+
 @font-face {
   font-family: ClearSans;
   src: url('./assets/clear-sans.bold.ttf');
@@ -37,3 +42,8 @@ h1 {
 h2 {
   color: #ff78ac;
 }
+
+.font-shadows {
+  font-family: 'Shadows Into Light', cursive;
+}
+

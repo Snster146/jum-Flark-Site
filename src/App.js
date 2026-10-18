@@ -9,7 +9,11 @@ import Footer from './components/Footer';
 import Wordle from './components/Wordle';
 import Youtube from './components/Youtube';
 import Instagram from './components/instagram'
+import Dupes from './components/Dupes';
+import Wiki from './components/Wiki';
 
+
+// Routing :3 : currently the nav bar isnt appearing at the top of dupes?
 function App() {
   return (
     <Router>
@@ -24,10 +28,11 @@ function App() {
           <Route path="/subscribe" element={<div><Cards /> </div> }/>
           <Route path="/Youtube"  element={<div> <Youtube  />   </div>} />
           <Route path="/instagram" element={<div><Instagram /></div>}   />
+          <Route path="/Dupes" element={<div><Dupes /></div>}   />
+          <Route path="/Wiki" element={<div><Wiki /></div>}   />
+
         </Routes>
-        <NewsLetter /> 
-        <Footer />
-      
+
       </div>
     </Router>
   );
