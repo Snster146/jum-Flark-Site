@@ -1,20 +1,29 @@
-const selectedWord="JUMFLARK"
-const jumrow=[null,0]
+
+// tracks the row where 'JUMFL' was entered 
+//  index 1 with a value of 1 means that 'JUMFL' was entered 
+// index 1 with a value of 0 means that 'JUMFL' wasn't entered 
+let jumrow=[null,0]
+// let jumflTyped=false
 
 function checkWord(word,row){
-
+// if typed 'JUMFL' return 3
+    if (isJum(word)){
+            return 4;
+       } 
     if (isJumfl(word)){
+        
         if (jumrow[0] !== row){
+        // stores the row where 'JUMFL' was typed 
             jumrow[0] = row
             jumrow[1] = 0
         }
-
+        // adds 1
         jumrow[1] += 1
+// returns 4 if you typed 'JUMFLARK'
+       
+        // if jumfl was typed 
+        if (jumrow[1] === 1){ //& jumflTyped===false){
 
-        if (isJum(word)){
-            return 4;
-        } 
-        else if (jumrow[1] === 1){
             for (let rowIndex = 0; rowIndex < 5; rowIndex++){
                 const rowElement = document.getElementById(`row-${rowIndex}`)
                 if (!rowElement){
@@ -22,12 +31,9 @@ function checkWord(word,row){
                 }
 
                 rowElement.className="grid grid-cols-8 mt-4"
-                for (let cellIndex = 5; cellIndex < 8; cellIndex++){
-                    const cell = document.createElement("div")
-                    cell.id = `cell-${rowIndex}-${cellIndex}`
-                    cell.className = "w-14 h-14 bg-inherit border-2 border-gray-500 m-1 text-4xl"
-                    rowElement.appendChild(cell)
-                }
+            // adds 3 extra columns
+            addThreeExtraCols(rowIndex,rowElement)
+                
             }
         }
         // is jumfl
@@ -52,22 +58,33 @@ function checkWord(word,row){
     } 
 }
 
+function addThreeExtraCols(rowIndex, rowElement){
+    for (let cellIndex = 5; cellIndex < 8; cellIndex++){
+                    const cell = document.createElement("div")
+                    cell.id = `cell-${rowIndex}-${cellIndex}`
+                    cell.className = "w-14 h-14 bg-inherit border-2 border-gray-500 m-1 text-4xl"
+                    rowElement.appendChild(cell)
+                }
+}
+
 function checkLetterPosition(letter,index){
-    if(letter==selectedWord[index]){
+    if(letter=="JUMFLARK"[index]){
         return 1;
     }
-    else if (selectedWord.indexOf(letter)>-1) {
+    else if ("JUMFLARK".indexOf(letter)>-1) {
         return 2;
     }
 
 }
 
 function isJumfl(word){
+    // jumflTyped=true
     return word=="JUMFL";
 }
 function isJum(word){
-    return word==selectedWord;
+    return word=="JUMFLARK";
 }
 
 
-export default checkWord;
+ export  {checkWord};
+//  jumflTyped};
