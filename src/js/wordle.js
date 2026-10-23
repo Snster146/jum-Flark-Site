@@ -1,12 +1,22 @@
 
 // tracks the row where 'JUMFL' was entered 
 //  index 1 with a value of 1 means that 'JUMFL' was entered 
+
+import VALID_WORDS from "./words";
+
 // index 1 with a value of 0 means that 'JUMFL' wasn't entered 
 let jumrow=[null,0]
 // let jumflTyped=false
 
 function checkWord(word,row){
 // if typed 'JUMFL' return 3
+    if (!isJum(word) && !isJumfl(word) && !VALID_WORDS.has(word.toLowerCase())) {
+        clearRow(row)
+        return false;
+
+    }
+  
+    
     if (isJum(word)){
             return 4;
        } 
@@ -65,6 +75,13 @@ function addThreeExtraCols(rowIndex, rowElement){
                     cell.className = "w-14 h-14 bg-inherit border-2 border-gray-500 m-1 text-4xl"
                     rowElement.appendChild(cell)
                 }
+}
+
+function clearRow(rowIndex){
+    for (let cellIndex=0;cellIndex<5; cellIndex++){
+        const cell = document.getElementById(`cell-${rowIndex}-${cellIndex}`)
+        cell.textContent=""
+    }
 }
 
 function checkLetterPosition(letter,index){

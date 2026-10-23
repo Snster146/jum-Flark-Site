@@ -14,13 +14,22 @@ let isjum_real = false
 
 function winnerBox(setSolved){
     return(
-        <div id="winnerbox" onClick={() => document.getElementById("winnerbox").style.display="none" } className="  fixed inset-0   flex items-center justify-center text-center text-white    ">
-            <div className="  border-2 border-green-500   bg-gray-600 w-64 h-72  ">
+        <div id="winnerbox" onClick={() => document.getElementById("winnerbox").style.display="none" } className="  fixed top-20 left-1/2 -translate-x-1/2 bg-white border-black      ">
+            <div className=" align-center   w-64 h-72  ">
                 <h1 className="text-xl font-bold  text-white p-5 ">youve won</h1>
                 <p className="pb-5">Track your Wordle win percentage and earn badges for big achievements.</p>
                 <button  className="pb-5"> Create a free account</button><br></br>
                 <a href="" alt="some link" className="  underline ">Already Registered? Log In</a>
             </div>
+        </div>
+    )
+}
+
+function invalidWord()
+{
+    return (
+        <div className="fixed top-20 left-1/2 -translate-x-1/2 bg-white text-black font-bold px-4 py-3 rounded-md shadow-lg z-50">
+            <h1>Invalid Word</h1>
         </div>
     )
 }
@@ -45,6 +54,7 @@ const Wordle = () => {
     const [rowCell, setRowCell] = useState(0)
     const [colCell, setCollCell] = useState(0)
     const [solved , setSolved]=useState(false)
+    const [validWord, setValidWord]=useState(true)
 
     function addLetter(letter) {
 
@@ -86,6 +96,15 @@ const Wordle = () => {
                 // true if option 4 which checks if the word you inputted was 'JUMFLARK'
                 isjum_real=checkedWord === 4;
                 
+                if (checkedWord===false){
+                    // show the invalid word popup then hide it after 1.5 seconds
+                    setValidWord(false);
+                    setTimeout(() => setValidWord(true), 1000);
+                    setRowCell(rowCell);
+                    setCollCell(0);
+                    return;
+                }
+
                 // dunno
                 if (isjum){}
 
@@ -97,9 +116,10 @@ const Wordle = () => {
                 //     document.
                 // }
                 // advances to the next row and resets the column to 0 if you havent inputted 'JUMFL' 
-                if (!isjum || (colCell==8 & !isjum_real)){
-                setRowCell(rowCell + 1);
-                setCollCell(0);
+                if ((!isjum || (colCell==8 & !isjum_real)) ){
+                    setValidWord(true);
+                    setRowCell(rowCell + 1);
+                    setCollCell(0);
             }
   
                 
@@ -175,6 +195,7 @@ const Wordle = () => {
             </div>
 
             {solved && winnerBox(setSolved)}
+            {!validWord && invalidWord() }
 
         </div>
     )
